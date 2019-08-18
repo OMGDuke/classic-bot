@@ -19,7 +19,7 @@ const manageMember = (msg, type) => {
       members.forEach((member) => member.roles[type](newRole));
       msg.reply(`${type.charAt(0).toUpperCase() + type.slice(1)}${type === 'add' ? 'e' : ''}d ${members.map((member) => (member.nickname ? member.nickname : member.user.username)).join(', ')} ${type === 'add' ? 'to' : 'from'} ${newRole.name}`);
     } else {
-      msg.reply(`🚫You must be a GM or Officer of ${newRole.name} to ${type} members🚫`);
+      msg.reply(`🚫You must be a GM or Officer of ${newRole.name} to ${type} members 🚫`);
     }
   } catch (e) {
     console.log(e);
