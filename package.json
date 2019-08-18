@@ -1,0 +1,25 @@
+{
+  "name": "classic-bot",
+  "version": "1.0.0",
+  "description": "A discord bot to manage Guild role assignments",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js ./server.js"
+  },
+  "author": "Alex Robertson (Alex@alexrobertson.dev)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js",
+    "dotenv": "^8.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "nodemon": "^1.19.1"
+  }
+}
